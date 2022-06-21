@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.versionButton{
+  width: 420px;
+  color: black;
+}
+.versionButton:hover{
+  background-color: rgb(213, 213, 213);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoList {
+  height: 80vh;
+  width: 400px;
+  background-color: rgba(238, 238, 238, 0.6);
+  border-radius: 3px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
+  margin: 10px 0;
+}
+
+form input {
+  padding: 5px 10px;
+  border: 1px solid rgb(183, 183, 183);
+  border-radius: 3px;
+  width: 343px;
+}
+
+form button {
+  background-color: rgb(0, 145, 255);
+}
+
+.taskWrap {
+  height: calc(80vh - 45px);
+  overflow: scroll;
+}
+
+.task {
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 400px;
+  display: flex;
+}
+
+p{
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0;
+  height: 35px;
+  font-size: 14px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.done span p {
+  text-decoration: line-through;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done {
+  opacity: 0.4;
+}
+
+.archive {
+  position:absolute;
+  top: calc(10vh + 10px);
+  left: calc(50% + 230px);
+  height: 50vh;
+  width: 400px;
+  background-color: rgba(238, 238, 238, 0.6);
+  border-radius: 3px;
+  padding: 10px;
+}
+.archive h3 {
+  height: 40px;
+  margin: 0;
+  display: grid;
+  place-items: center start;
+}
+.archiveTasks {
+  height: calc(50vh - 40px);
+  overflow: scroll;
 }
